@@ -8,12 +8,19 @@ public class Incidencia {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
     private Long id;
-    private Integer regiao_id;
-    private Integer mes;
-    private Long faixa_id;
-    private Integer qnt_exames;
+    private Integer Regiao_id;
+    private Integer Mes;
+    private Long Faixa_id;
+    private Integer Qnt_exames;
 
     public Incidencia() {
+    }
+
+    public Incidencia(Integer regiao_id, Integer mes, Long faixa_id, Integer qnt_exames) {
+        Regiao_id = regiao_id;
+        Mes = mes;
+        Faixa_id = faixa_id;
+        Qnt_exames = qnt_exames;
     }
 
     public Long getId() {
@@ -22,34 +29,34 @@ public class Incidencia {
 
 
     public Integer getRegiao_id() {
-        return regiao_id;
+        return Regiao_id;
     }
 
     public void setRegiao_id(Integer regiao_id) {
-        this.regiao_id = regiao_id;
+        this.Regiao_id = regiao_id;
     }
 
     public Integer getMes() {
-        return mes;
+        return Mes;
     }
 
     public void setMes(Integer mes) {
-        this.mes = mes;
+        this.Mes = mes;
     }
 
     public Long getFaixa_id() {
-        return faixa_id;
+        return Faixa_id;
     }
 
     public void setFaixa_id(Long faixa_id) {
-        faixa_id = faixa_id;
+        this.Faixa_id = faixa_id;
     }
 
     public Integer getQnt_exames() {
-        return qnt_exames;
+        return Qnt_exames;
     }
 
     public void setQnt_exames(Integer qnt_exames) {
-        this.qnt_exames = qnt_exames;
+        this.Qnt_exames = qnt_exames;
     }
 }
