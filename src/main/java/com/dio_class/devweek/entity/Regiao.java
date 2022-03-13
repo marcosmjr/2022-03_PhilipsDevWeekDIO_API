@@ -16,6 +16,7 @@ public class Regiao {
         this.total_exames = total;
     }
 
+
     public Regiao() {
     }
 

@@ -13,7 +13,7 @@ import java.util.Optional;
 @RequestMapping("/api")
 public class ControllerRegiao {
 
-    private final RegiaoRepo repository;
+    private RegiaoRepo repository;
 
     public ControllerRegiao(RegiaoRepo repository) {
         this.repository = repository;
